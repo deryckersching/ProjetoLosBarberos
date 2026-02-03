@@ -1,0 +1,5 @@
+# o que for posto aqui, não será enviado
+
+node_modules/
+
+.env
