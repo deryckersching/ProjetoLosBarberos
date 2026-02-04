@@ -2,6 +2,7 @@
 
 const express = require('express'); // importação do express
 const app = express(); // atribuição do express à variável app
+const { testConncetion } = require('./config/db'); // importa a função de
 
 // middlewares globais - executados em todas as requisições
 // middleware: funções que interceptam requisições/respostas para adicionar funcionalidades
@@ -44,5 +45,12 @@ app.use((err, req, res, next) => { // captura erros - app.use se encontra pelo n
   console.error(err); // log do erro no console - para fins de depuração
   res.status(err.status || 500).json({ error: err.message || 'Erro interno' }); // resposta de erro em JSON
 });
+
+async function verificarDB() {
+  const resultado = await testConnection();
+  console.log(`Sucesso?: ${resultado.success} e Mensagem: ${resultado.message}` );
+}
+verificarDB();
+
 
 module.exports = app; // exportação do app para uso em outros arquivos (ex: index.js, server.js)

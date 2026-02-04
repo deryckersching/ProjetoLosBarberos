@@ -1,0 +1,30 @@
+//
+
+const mysql = require("mysql/promise"); //
+require("dotenv");config(); //
+
+//
+//
+//
+
+const pool = mysql.createPool({
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+});
+
+// Função para testar a conexão com o banco de dados
+async function testConnection() {
+    try {
+        const connection = await pool.getConnection();
+        await connection.ping(); // testar se a conexão está ativa
+        connection.release(); // libera a conexão de volta para o pool
+        return { success: true, message: "Conexão com o banco de dados bem-sucedidos"}
+    } catch (error) {
+        return { sucess: false, message: `Falha na conexão: ${error.message}` };
+    }
+}
+
+module.exports = { pool, testConnection }; //

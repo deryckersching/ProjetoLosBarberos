@@ -7,8 +7,8 @@
 6 silly config load:file:C:\ProgramData\npm\etc\npmrc
 7 verbose title npm start
 8 verbose argv "start"
-9 verbose logfile logs-max:10 dir:C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-03T22_43_29_203Z-
-10 verbose logfile C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-03T22_43_29_203Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-04T23_04_54_088Z-
+10 verbose logfile C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-04T23_04_54_088Z-debug-0.log
 11 silly logfile done cleaning log files
 12 verbose cwd C:\Users\deryck_zezuino\Desktop\Projetos2026
 13 verbose os Windows_NT 10.0.26200
