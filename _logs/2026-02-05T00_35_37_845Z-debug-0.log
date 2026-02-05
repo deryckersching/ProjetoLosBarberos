@@ -7,12 +7,12 @@
 6 silly config load:file:C:\ProgramData\npm\etc\npmrc
 7 verbose title npm install
 8 verbose argv "install"
-9 verbose logfile logs-max:10 dir:C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-04T23_10_47_491Z-
-10 verbose logfile C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-04T23_10_47_491Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-05T00_35_37_845Z-
+10 verbose logfile C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-05T00_35_37_845Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
 12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
-13 silly idealTree buildDeps
-14 silly logfile done cleaning log files
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
 15 silly reify moves {}
 16 silly audit bulk request {
 16 silly audit   '@eslint-community/eslint-utils': [ '4.9.1' ],
@@ -130,7 +130,7 @@
 16 silly audit   'word-wrap': [ '1.2.5' ],
 16 silly audit   'yocto-queue': [ '0.1.0' ]
 16 silly audit }
-17 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 667ms
+17 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 326ms
 18 silly audit report {}
 19 verbose cwd C:\Users\deryck_zezuino\Desktop\Projetos2026
 20 verbose os Windows_NT 10.0.26200

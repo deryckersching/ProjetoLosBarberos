@@ -1,11 +1,11 @@
-//
+//aqui ficam as configurações de conexão com o banco de dados
 
 const mysql = require("mysql/promise"); //
 require("dotenv");config(); //
 
-//
-//
-//
+// cria uma pool de conexões (se conecta ao banco de dados) usando as variáveis de ambiente (.env)
+// pool: um conjunto de conexões que podem ser reutilizadas, melhorando a performance
+// podem haver múltiplas conexões abertas ao mesmo tempo (varios bancos e usuários ao mesmo tempo)
 
 const pool = mysql.createPool({
     host: process.env.DB_HOST,
@@ -27,4 +27,4 @@ async function testConnection() {
     }
 }
 
-module.exports = { pool, testConnection }; //
+module.exports = { pool, testConnection }; //exporta a pool e a função de teste para serem usadas em outros arquivos
