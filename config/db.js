@@ -1,7 +1,7 @@
 //aqui ficam as configurações de conexão com o banco de dados
 
-const mysql = require("mysql/promise"); //
-require("dotenv");config(); //
+const mysql = require("mysql2/promise"); //
+require("dotenv").config(); 
 
 // cria uma pool de conexões (se conecta ao banco de dados) usando as variáveis de ambiente (.env)
 // pool: um conjunto de conexões que podem ser reutilizadas, melhorando a performance
