@@ -1,16 +1,13 @@
 const express = require('express');
-const app = express();
+const { pool } = require('./config/db');
+const app = express(); 
 
-// Importar os módulos de rotas
-const agendaRoutes = require('./routes/agendas');
-const barbeirosRoutes = require('./routes/barbeiros');
 const clientesRoutes = require('./routes/clientes');
-const servicosRoutes = require('./routes/servicos');
+const barbeirosRoutes = require('./routes/barbeiros');
+const agendaRoutes = require('./routes/agenda');
 
-// Usar os módulos de rotas
-app.use('/clientes', agendaRoutes);
-app.use('/categorias', barbeirosRoutes);
-app.use('/movimentacoes', clientesRoutes);
-app.use('/historico-estoque', servicosRoutes);
+app.use('/clientes', clientesRoutes);
+app.use('/barbeiros', barbeirosRoutes);
+app.use('/agenda', agendaRoutes); 
 
-module.exports = app;
+module.exports = app; 

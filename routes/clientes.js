@@ -1,75 +1,72 @@
 const express = require('express');
 const { pool } = require('../config/db');
-const router = express.Router();
+const router = express.Router(); 
 
-// ====================== CATEGORIAS ======================
-
-// Rota GET - /categorias
-// Retorna somente a coluna 'nome' da tabela 'categorias' - SELECT nome FROM categorias
 router.get('/', async (req, res) => {
   try {
-    const [rows] = await pool.execute('SELECT nome FROM categorias');
+    const [rows] = await pool.execute('SELECT * FROM Cliente');
     res.json(rows);
   } catch (error) {
-    console.error('Erro ao consultar categorias:', error);
-    res.status(500).json({ error: 'Erro ao consultar categorias', details: error.message });
+    console.error('Erro ao consultar clientes:', error);
+    res.status(500).json({ error: 'Erro ao consultar clientes', details: error.message });
   }
 });
 
-// Rota GET para /categorias/:id - consulta uma categoria específica pelo ID ( : = parâmetro obrigatório e variável )
-// Retorna a categoria correspondente ao ID fornecido - SELECT * FROM categorias WHERE id_categoria = ?
 router.get('/:id', async (req, res) => {
-  const categoriaId = req.params.id;
+  const clientesId = req.params.id; 
   try {
-    const [rows] = await pool.execute('SELECT * FROM categorias WHERE id_categoria = ?', [categoriaId]);
+    const [rows] = await pool.execute('SELECT * FROM cliente WHERE id = ?', [clientesId]);
     if (rows.length === 0) {
-      return res.status(404).json({ error: 'Categoria não encontrada' });
+      return res.status(404).json({ error: 'Cliente não encontrado' });
     }
-    res.json(rows[0]);
+    res.json(rows[0]); 
   } catch (error) {
-    console.error('Erro ao consultar categoria:', error);
-    res.status(500).json({ error: 'Erro ao consultar categoria', details: error.message });
+    console.error('Erro ao consultar produto:', error);
+    res.status(500).json({ error: 'Erro ao consultar produto', details: error.message });
   }
 });
 
-// Rota DELETE - /categorias/:id - deleta uma categoria
+router.get('/nome/:nome', async (req,res) => {
+  const Nome = req.params.nome;
+  try{
+    const [rows] = await pool.execute('SELECT * FROM cliente WHERE Nome = ?',[Nome]);
+    if (rows.length === 0) {
+      return res.status(404).json({ error: 'Cliente não encontrado' });
+    }
+    res.json(rows[0]); 
+  } catch (error) {
+    console.error('Erro ao consultar cliente:', error);
+    res.status(500).json({ error: 'Erro ao consultar cliente', details: error.message });
+  }
+});
+
 router.delete('/:id', async (req, res) => {
-  const categoriaId = req.params.id;
-  
+  const clientesId= req.params.id;
   try {
-    // Primeiro verifica se a categoria existe
-    const [categoria] = await pool.execute('SELECT * FROM categorias WHERE id_categoria = ?', [categoriaId]);
-    if (categoria.length === 0) {
-      return res.status(404).json({ error: 'Categoria não encontrada' });
+    const [cliente]= await pool.execute('SELECT * FROM cliente WHERE id = ?', [clientesId]);
+    if (cliente.length === 0) {
+      return res.status(404).json({ error: 'Cliente não encotrado'});
     }
 
-    // Verifica se existem produtos vinculados a esta categoria
-    const [produtos] = await pool.execute('SELECT COUNT(*) as total FROM produtos WHERE id_categoria = ?', [categoriaId]);
-    if (produtos[0].total > 0) {
-      return res.status(400).json({ 
-        error: 'Não é possível excluir a categoria',
-        message: `Existem ${produtos[0].total} produto(s) vinculado(s) a esta categoria. Remova ou reclassifique os produtos antes de excluir a categoria.`
-      });
-    }
-
-    // Se não há produtos vinculados, procede com a exclusão
-    const [result] = await pool.execute('DELETE FROM categorias WHERE id_categoria = ?', [categoriaId]);
+    const [result] = await pool.execute('DELETE FROM cliente WHERE id  = ?', [clientesId]);
     
     if (result.affectedRows === 0) {
-      return res.status(404).json({ error: 'Categoria não encontrada' });
+      return res.status(404).json({ error: 'Cliente não encontrado' });
     }
 
     res.json({ 
-      message: 'Categoria excluída com sucesso',
-      categoria: categoria[0].nome,
-      id: categoriaId
+      message: 'Cliente excluído com sucesso',
+      cliente: cliente[0].nome,
+      id: clientesId
     });
 
-  } catch (error) {
-    console.error('Erro ao excluir categoria:', error);
-    res.status(500).json({ error: 'Erro ao excluir categoria', details: error.message });
-  }
-});
 
+
+  } catch (error) {
+    console.error('Erro ao excluir cliente:', error);
+    res.status(500).json({ error: 'Erro ao excluir cliente', details: error.message });
+  }
+  
+});
 
 module.exports = router;
