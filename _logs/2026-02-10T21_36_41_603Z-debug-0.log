@@ -7,8 +7,8 @@
 6 silly config load:file:C:\ProgramData\npm\etc\npmrc
 7 verbose title npm install
 8 verbose argv "install"
-9 verbose logfile logs-max:10 dir:C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-09T23_49_08_910Z-
-10 verbose logfile C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-09T23_49_08_910Z-debug-0.log
+9 verbose logfile logs-max:10 dir:C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-10T21_36_41_603Z-
+10 verbose logfile C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-10T21_36_41_603Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
 12 silly packumentCache heap:4496293888 maxSize:1124073472 maxEntrySize:562036736
 13 silly logfile done cleaning log files
@@ -202,7 +202,7 @@
 16 silly audit   wrappy: [ '1.0.2' ],
 16 silly audit   'yocto-queue': [ '0.1.0' ]
 16 silly audit }
-17 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 466ms
+17 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 434ms
 18 silly audit report {}
 19 verbose cwd C:\Users\deryck_zezuino\Desktop\Projetos2026
 20 verbose os Windows_NT 10.0.26200
