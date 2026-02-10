@@ -2,25 +2,15 @@ const express = require('express');
 const app = express();
 
 // Importar os módulos de rotas
-const produtosRoutes = require('./routes/produtos');
-const categoriasRoutes = require('./routes/categorias');
-const movimentacoesRoutes = require('./routes/movimentacoes');
-const historicoRoutes = require('./routes/historico');
+const agendaRoutes = require('./routes/agendas');
+const barbeirosRoutes = require('./routes/barbeiros');
+const clientesRoutes = require('./routes/clientes');
+const servicosRoutes = require('./routes/servicos');
 
 // Usar os módulos de rotas
-app.use('/produtos', produtosRoutes);
-app.use('/categorias', categoriasRoutes);
-app.use('/movimentacoes', movimentacoesRoutes);
-app.use('/historico-estoque', historicoRoutes);
+app.use('/clientes', agendaRoutes);
+app.use('/categorias', barbeirosRoutes);
+app.use('/movimentacoes', clientesRoutes);
+app.use('/historico-estoque', servicosRoutes);
 
-// Rotas específicas que precisam ser mantidas no caminho original
-app.use('/produtos-com-categoria', (req, res, next) => {
-  req.url = '/com-categoria';
-  produtosRoutes(req, res, next);
-});
-
-app.use('/movimentacoes-completas', (req, res, next) => {
-  req.url = '/completas';
-  movimentacoesRoutes(req, res, next);
-});
 module.exports = app;
