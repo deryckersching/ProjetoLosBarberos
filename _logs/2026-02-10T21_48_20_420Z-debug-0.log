@@ -5,14 +5,9 @@
 4 silly config load:file:C:\Users\deryck_zezuino\Desktop\Projetos2026\.npmrc
 5 silly config load:file:C:\Users\deryck_zezuino\.npmrc
 6 silly config load:file:C:\ProgramData\npm\etc\npmrc
-7 verbose title npm intall
-8 verbose argv "intall"
-9 verbose logfile logs-max:10 dir:C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-10T00_16_20_519Z-
-10 verbose logfile C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-10T00_16_20_519Z-debug-0.log
+7 verbose title npm start
+8 verbose argv "start"
+9 verbose logfile logs-max:10 dir:C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-10T21_48_20_420Z-
+10 verbose logfile C:\Users\deryck_zezuino\Desktop\Projetos2026\_logs\2026-02-10T21_48_20_420Z-debug-0.log
 11 silly logfile start cleaning logs, removing 1 files
-12 verbose cwd C:\Users\deryck_zezuino\Desktop\Projetos2026
-13 verbose os Windows_NT 10.0.26200
-14 verbose node v24.11.1
-15 verbose npm  v11.6.2
-16 verbose exit 1
-17 verbose code 1
+12 silly logfile done cleaning log files
