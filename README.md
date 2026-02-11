@@ -23,11 +23,11 @@ npm start
 
 Endpoints principais
 
-GET **/produtos** - 
-POST **/produtos**- 
-GET /produtos/{id} - 
-PUT /produtos/{id} - 
-DELETE /produtos/{id} - 
-GET /movimentacoes - 
+-GET /produtos - 
+-POST /produtos - 
+-GET /produtos/{id} - 
+-PUT /produtos/{id} - 
+-DELETE /produtos/{id} - 
+-GET /movimentacoes - 
 
 ``
