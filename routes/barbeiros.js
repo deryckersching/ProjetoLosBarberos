@@ -13,3 +13,7 @@ router.get('/', async (req, res) => {
 });
 
 module.exports = router;
+
+
+ALTER TABLE Barbeiros
+ADD COLUMN id INT AUTO_INCREMENT UNIQUE;
