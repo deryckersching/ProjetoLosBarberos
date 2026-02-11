@@ -1,13 +1,28 @@
-const express = require('express');
-const { pool } = require('./config/db');
-const app = express(); 
+const express = require("express");
+const { testConnection } = require("./config/db");
 
-const clientesRoutes = require('./routes/clientes');
-const barbeirosRoutes = require('./routes/barbeiros');
-const agendaRoutes = require('./routes/agenda');
+const clientesRoutes = require("./routes/clientes");
+const barbeirosRoutes = require("./routes/barbeiros");
+const agendaRoutes = require("./routes/agenda");
 
-app.use('/clientes', clientesRoutes);
-app.use('/barbeiros', barbeirosRoutes);
-app.use('/agenda', agendaRoutes); 
+const app = express();
 
-module.exports = app; 
+app.use(express.json());
+
+// rotas
+app.use("/clientes", clientesRoutes);
+app.use("/barbeiros", barbeirosRoutes);
+app.use("/agenda", agendaRoutes);
+
+app.get("/", (req, res) => {
+  res.send("API LosBarbeiros rodando!");
+});
+
+const PORT = 3001;
+
+app.listen(PORT, async () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+
+  const result = await testConnection();
+  console.log(result.message);
+});
