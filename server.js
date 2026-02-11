@@ -9,6 +9,7 @@ const app = express();
 
 app.use(express.json());
 
+
 // rotas
 app.use("/clientes", clientesRoutes);
 app.use("/barbeiros", barbeirosRoutes);
