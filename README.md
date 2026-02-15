@@ -2,20 +2,29 @@
   Este projeto é uma API RESTful feita em Node.js com Express e conectada ao banco MySQL.
   Ela permite cadastrar, listar, atualizar e excluir clientes, barbeiros e agendamentos.
 
-🎯 Objetivo do Projeto
-O objetivo é praticar o desenvolvimento de uma API REST usando Node.js e Express.
- O projeto treina CRUD, rotas, conexão com banco e testes no Postman.
+```bash
 
-🧠 Tecnologias Usadas :
-Tecnologia :                      Função no projeto :
+## Objetivo do Projeto
+  O objetivo é praticar o desenvolvimento de uma API REST usando Node.js e Express.
+  O projeto treina CRUD, rotas, conexão com banco e testes no Postman.
+
+```
+
+```bash
+
+## Tecnologias Usadas :
+### Tecnologia :                      ### Função no projeto :
 
 Node.js                           Executa o backend da API
 Express                           Cria rotas, endpoints e controla requisições
 MySQL                             Armazena os dados (clientes, barbeiros e agenda)
 Postman                           Testa os endpoints da API
 
+```
 
-📁 Organização do Projeto
+```bash
+
+## Organização do Projeto
 O projeto foi separado em pastas para facilitar a leitura e manutenção do código.
 
 Pasta/Arquivo                     Para que serve
@@ -25,27 +34,39 @@ Pasta/Arquivo                     Para que serve
 /routes/agenda.js                 Rotas e CRUD dos agendamentos
 server.js                         Arquivo principal que inicia o servidor
 
+```
 
-⚙️ Como Rodar o Projeto
-✅ 1) Instalar dependências
+```bash
+
+## Como Rodar o Projeto
+### 1) Instalar dependências
 Esse comando instala tudo que o projeto precisa para funcionar.
 
 npm install
 
+```
 
-✅ 2) Rodar o servidor
+```bash
+
+### 2) Rodar o servidor
 Esse comando liga a API para você testar no Postman.
 
 npm start
 
+```
 
-🌐 URL Base da API
+```bash
+
+## URL Base da API
 A API roda na seguinte URL:
 
 http://localhost:3001
 
+```
 
-🧾 Tabelas do Banco de Dados
+```bash
+
+## Tabelas do Banco de Dados
 O projeto utiliza as seguintes tabelas no MySQL:
 
 Tabela                             O que armazena
@@ -53,8 +74,11 @@ cliente                            Dados dos clientes
 barbeiros                          Dados dos barbeiros
 agenda                             Agendamentos feitos
 
+```
 
-👤 Endpoints - CLIENTES
+```bash
+
+## Endpoints - CLIENTES
 Essas rotas são responsáveis por cadastrar e gerenciar clientes.
 
 Método                 Endpoint                       O que faz
@@ -68,16 +92,22 @@ PATCH                  /clientes/updateEmail/:id      Atualiza somente o Email
 PATCH                  /clientes/updateTelefone/:id   Atualiza somente o Telefone
 DELETE                 /clientes/:id                  Exclui um cliente pelo ID
 
+```
 
-📌 Exemplo de JSON - Criar Cliente (POST)
+```bash
+
+## Exemplo de JSON - Criar Cliente (POST)
 {
   "Nome": "João Silva",
   "Email": "joao@email.com",
   "Telefone": "11999999999"
 }
 
+```
 
-✂️ Endpoints - BARBEIROS
+```bash
+
+## Endpoints - BARBEIROS
 Essas rotas são responsáveis por cadastrar e gerenciar barbeiros.
 
 Método               Endpoint                             O que faz
@@ -92,8 +122,11 @@ PATCH                /barbeiros/updateTelefone/:id         Atualiza somente o Te
 DELETE               /barbeiros/:id                        Exclui um barbeiro pelo ID
 DELETE               /barbeiros/nome/:nome                 Exclui um barbeiro pelo Nome
 
+```
 
-📌 Exemplo de JSON - Criar Barbeiro (POST)
+```bash
+
+## Exemplo de JSON - Criar Barbeiro (POST)
 {
   "CPF": "12345678901",
   "Nome": "Carlos Barbeiro",
@@ -101,8 +134,11 @@ DELETE               /barbeiros/nome/:nome                 Exclui um barbeiro pe
   "Telefone": "11999990000"
 }
 
+```
 
-📅 Endpoints - AGENDA (AGENDAMENTOS)
+```bash
+
+## Endpoints - AGENDA (AGENDAMENTOS)
 Essas rotas controlam os agendamentos entre clientes e barbeiros.
 
 Método            Endpoint                  O que faz
@@ -112,8 +148,11 @@ POST              /agenda                   Cria um novo agendamento
 PUT               /agenda/:id               Atualiza os dados do agendamento
 DELETE            /agenda/:id               Exclui um agendamento pelo ID
 
+```
 
-📌 Exemplo de JSON - Criar Agendamento (POST)
+```bash
+
+## Exemplo de JSON - Criar Agendamento (POST)
 {
   "Data_agendamento": "2026-02-15",
   "Hora": "14:30:00",
@@ -123,12 +162,15 @@ DELETE            /agenda/:id               Exclui um agendamento pelo ID
   "CPF_barbeiro": "12345678901"
 }
 
+```
 
-🧪 Testes no Postman
+```bash
+
+## Testes no Postman
 O Postman foi usado para testar todas as rotas da API.
  Para POST/PUT/PATCH, é necessário enviar os dados em Body > raw > JSON.
 
-✅ Validações implementadas
+## Validações implementadas
 O projeto possui validações simples para evitar erros comuns.
 
 Campo                  Regra
@@ -137,8 +179,11 @@ Email                  até 50 caracteres
 Telefone               até 11 caracteres
 CPF                    até 11 caracteres
 
+```
 
-📌 Observações Importantes
+```bash
+
+## Observações Importantes
 Para excluir clientes ou barbeiros, pode ser necessário excluir agendamentos antes.
 
 
@@ -147,6 +192,7 @@ A API retorna mensagens em JSON e usa status HTTP corretos (200, 201, 404, 500).
 
 A estrutura do projeto está separada por rotas para facilitar a organização.
 
+```
 
 👨‍💻 Autor
 Projeto desenvolvido por: Deryck
