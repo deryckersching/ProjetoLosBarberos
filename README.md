@@ -189,6 +189,6 @@ A API retorna mensagens em JSON e usa status HTTP corretos (200, 201, 404, 500);
 
 A estrutura do projeto está separada por rotas para facilitar a organização.
 
-Autor ➝
+####Autor ➝
 Projeto desenvolvido por: Deryck, Luan e Lucas
 
