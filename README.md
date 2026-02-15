@@ -2,18 +2,16 @@
   Este projeto é uma API RESTful feita em Node.js com Express e conectada ao banco MySQL.
   Ela permite cadastrar, listar, atualizar e excluir clientes, barbeiros e agendamentos.
 
-```bash
 
 ## Objetivo do Projeto
   O objetivo é praticar o desenvolvimento de uma API REST usando Node.js e Express.
   O projeto treina CRUD, rotas, conexão com banco e testes no Postman.
 
-```
-
-```bash
 
 ## Tecnologias Usadas :
 ### Tecnologia :                      ### Função no projeto :
+
+```bash
 
 Node.js                           Executa o backend da API
 Express                           Cria rotas, endpoints e controla requisições
@@ -22,10 +20,10 @@ Postman                           Testa os endpoints da API
 
 ```
 
-```bash
-
 ## Organização do Projeto
 O projeto foi separado em pastas para facilitar a leitura e manutenção do código.
+
+```bash
 
 Pasta/Arquivo                     Para que serve
 /config/db.js                     Faz a conexão com o banco MySQL
@@ -36,38 +34,38 @@ server.js                         Arquivo principal que inicia o servidor
 
 ```
 
-```bash
-
 ## Como Rodar o Projeto
 ### 1) Instalar dependências
 Esse comando instala tudo que o projeto precisa para funcionar.
+
+```bash
 
 npm install
 
 ```
 
-```bash
-
 ### 2) Rodar o servidor
 Esse comando liga a API para você testar no Postman.
+
+```bash
 
 npm start
 
 ```
 
-```bash
-
 ## URL Base da API
 A API roda na seguinte URL:
+
+```bash
 
 http://localhost:3001
 
 ```
 
-```bash
-
 ## Tabelas do Banco de Dados
 O projeto utiliza as seguintes tabelas no MySQL:
+
+```bash
 
 Tabela                             O que armazena
 cliente                            Dados dos clientes
@@ -76,10 +74,10 @@ agenda                             Agendamentos feitos
 
 ```
 
-```bash
-
 ## Endpoints - CLIENTES
 Essas rotas são responsáveis por cadastrar e gerenciar clientes.
+
+```bash
 
 Método                 Endpoint                       O que faz
 GET                    /clientes                      Lista todos os clientes cadastrados
@@ -105,10 +103,10 @@ DELETE                 /clientes/:id                  Exclui um cliente pelo ID
 
 ```
 
-```bash
-
 ## Endpoints - BARBEIROS
 Essas rotas são responsáveis por cadastrar e gerenciar barbeiros.
+
+```bash
 
 Método               Endpoint                             O que faz
 GET                  /barbeiros                           Lista todos os barbeiros cadastrados
@@ -136,10 +134,10 @@ DELETE               /barbeiros/nome/:nome                 Exclui um barbeiro pe
 
 ```
 
-```bash
-
 ## Endpoints - AGENDA (AGENDAMENTOS)
 Essas rotas controlam os agendamentos entre clientes e barbeiros.
+
+```bash
 
 Método            Endpoint                  O que faz
 GET               /agenda                   Lista todos os agendamentos cadastrados
@@ -164,14 +162,14 @@ DELETE            /agenda/:id               Exclui um agendamento pelo ID
 
 ```
 
-```bash
-
 ## Testes no Postman
 O Postman foi usado para testar todas as rotas da API.
  Para POST/PUT/PATCH, é necessário enviar os dados em Body > raw > JSON.
 
 ## Validações implementadas
 O projeto possui validações simples para evitar erros comuns.
+
+```bash
 
 Campo                  Regra
 Nome                   obrigatório e até 50 caracteres
@@ -181,7 +179,6 @@ CPF                    até 11 caracteres
 
 ```
 
-```bash
 
 ## Observações Importantes
 Para excluir clientes ou barbeiros, pode ser necessário excluir agendamentos antes.
@@ -191,8 +188,6 @@ A API retorna mensagens em JSON e usa status HTTP corretos (200, 201, 404, 500).
 
 
 A estrutura do projeto está separada por rotas para facilitar a organização.
-
-```
 
 👨‍💻 Autor
 Projeto desenvolvido por: Deryck
