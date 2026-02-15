@@ -3,39 +3,39 @@
   Ela permite cadastrar, listar, atualizar e excluir clientes, barbeiros e agendamentos.
 
 
-## Objetivo do Projeto
+## Objetivo do Projeto :
   O objetivo é praticar o desenvolvimento de uma API REST usando Node.js e Express.
   O projeto treina CRUD, rotas, conexão com banco e testes no Postman.
 
 
 ## Tecnologias Usadas :
-### Tecnologia :                      ### Função no projeto :
 
 ```bash
 
-Node.js                           Executa o backend da API
-Express                           Cria rotas, endpoints e controla requisições
-MySQL                             Armazena os dados (clientes, barbeiros e agenda)
-Postman                           Testa os endpoints da API
+Tecnologia :                      Função no projeto :
+  Node.js                           Executa o backend da API
+  Express                           Cria rotas, endpoints e controla requisições
+  MySQL                             Armazena os dados (clientes, barbeiros e agenda)
+  Postman                           Testa os endpoints da API
 
 ```
 
-## Organização do Projeto
+## Organização do Projeto :
 O projeto foi separado em pastas para facilitar a leitura e manutenção do código.
 
 ```bash
 
-Pasta/Arquivo                     Para que serve
-/config/db.js                     Faz a conexão com o banco MySQL
-/routes/clientes.js               Rotas e CRUD dos clientes
-/routes/barbeiros.js              Rotas e CRUD dos barbeiros
-/routes/agenda.js                 Rotas e CRUD dos agendamentos
-server.js                         Arquivo principal que inicia o servidor
+Pasta/Arquivo :                   Para que serve :
+  /config/db.js                     Faz a conexão com o banco MySQL
+  /routes/clientes.js               Rotas e CRUD dos clientes
+  /routes/barbeiros.js              Rotas e CRUD dos barbeiros
+  /routes/agenda.js                 Rotas e CRUD dos agendamentos
+  server.js                         Arquivo principal que inicia o servidor
 
 ```
 
-## Como Rodar o Projeto
-### 1) Instalar dependências
+## Como Rodar o Projeto :
+### 1) Instalar dependências ➝
 Esse comando instala tudo que o projeto precisa para funcionar.
 
 ```bash
@@ -44,7 +44,7 @@ npm install
 
 ```
 
-### 2) Rodar o servidor
+### 2) Rodar o servidor ➝
 Esse comando liga a API para você testar no Postman.
 
 ```bash
@@ -53,8 +53,8 @@ npm start
 
 ```
 
-## URL Base da API
-A API roda na seguinte URL:
+## URL Base da API :
+A API roda na seguinte URL ➝
 
 ```bash
 
@@ -62,33 +62,33 @@ http://localhost:3001
 
 ```
 
-## Tabelas do Banco de Dados
-O projeto utiliza as seguintes tabelas no MySQL:
+## Tabelas do Banco de Dados :
+O projeto utiliza as seguintes tabelas no MySQL ➝
 
 ```bash
 
-Tabela                             O que armazena
-cliente                            Dados dos clientes
-barbeiros                          Dados dos barbeiros
-agenda                             Agendamentos feitos
+Tabela :                           O que armazena :
+  cliente                            Dados dos clientes
+  barbeiros                          Dados dos barbeiros
+  agenda                             Agendamentos feitos
 
 ```
 
-## Endpoints - CLIENTES
-Essas rotas são responsáveis por cadastrar e gerenciar clientes.
+## Endpoints - CLIENTES :
+Essas rotas são responsáveis por cadastrar e gerenciar clientes ➝
 
 ```bash
 
-Método                 Endpoint                       O que faz
-GET                    /clientes                      Lista todos os clientes cadastrados
-GET                    /clientes/:id                  Busca um cliente pelo ID
-GET                    /clientes/nome/:nome           Busca um cliente pelo Nome
-POST                   /clientes                      Cria um novo cliente
-PUT                    /clientes/:id                  Atualiza todos os dados do cliente
-PATCH                  /clientes/updateNome/:id       Atualiza somente o Nome
-PATCH                  /clientes/updateEmail/:id      Atualiza somente o Email
-PATCH                  /clientes/updateTelefone/:id   Atualiza somente o Telefone
-DELETE                 /clientes/:id                  Exclui um cliente pelo ID
+Método :               Endpoint :                     O que faz :
+  GET                    /clientes                      Lista todos os clientes cadastrados
+  GET                    /clientes/:id                  Busca um cliente pelo ID
+  GET                    /clientes/nome/:nome           Busca um cliente pelo Nome
+  POST                   /clientes                      Cria um novo cliente
+  PUT                    /clientes/:id                  Atualiza todos os dados do cliente
+  PATCH                  /clientes/updateNome/:id       Atualiza somente o Nome
+  PATCH                  /clientes/updateEmail/:id      Atualiza somente o Email
+  PATCH                  /clientes/updateTelefone/:id   Atualiza somente o Telefone
+  DELETE                 /clientes/:id                  Exclui um cliente pelo ID
 
 ```
 
@@ -103,22 +103,22 @@ DELETE                 /clientes/:id                  Exclui um cliente pelo ID
 
 ```
 
-## Endpoints - BARBEIROS
-Essas rotas são responsáveis por cadastrar e gerenciar barbeiros.
+## Endpoints - BARBEIROS :
+Essas rotas são responsáveis por cadastrar e gerenciar barbeiros ➝
 
 ```bash
 
-Método               Endpoint                             O que faz
-GET                  /barbeiros                           Lista todos os barbeiros cadastrados
-GET                  /barbeiros/:id                        Busca um barbeiro pelo ID
-GET                  /barbeiros/nome/:nome                 Busca um barbeiro pelo Nome
-POST                 /barbeiros                            Cria um novo barbeiro
-PUT                  /barbeiros/:id                        Atualiza todos os dados do barbeiro
-PATCH                /barbeiros/updateNome/:id             Atualiza somente o Nome
-PATCH                /barbeiros/updateEmail/:id            Atualiza somente o Email
-PATCH                /barbeiros/updateTelefone/:id         Atualiza somente o Telefone
-DELETE               /barbeiros/:id                        Exclui um barbeiro pelo ID
-DELETE               /barbeiros/nome/:nome                 Exclui um barbeiro pelo Nome
+Método :              Endpoint :                           O que faz :
+  GET                  /barbeiros                            Lista todos os barbeiros cadastrados
+  GET                  /barbeiros/:id                        Busca um barbeiro pelo ID
+  GET                  /barbeiros/nome/:nome                 Busca um barbeiro pelo Nome
+  POST                 /barbeiros                            Cria um novo barbeiro
+  PUT                  /barbeiros/:id                        Atualiza todos os dados do barbeiro
+  PATCH                /barbeiros/updateNome/:id             Atualiza somente o Nome
+  PATCH                /barbeiros/updateEmail/:id            Atualiza somente o Email
+  PATCH                /barbeiros/updateTelefone/:id         Atualiza somente o Telefone
+  DELETE               /barbeiros/:id                        Exclui um barbeiro pelo ID
+  DELETE               /barbeiros/nome/:nome                 Exclui um barbeiro pelo Nome
 
 ```
 
@@ -134,17 +134,17 @@ DELETE               /barbeiros/nome/:nome                 Exclui um barbeiro pe
 
 ```
 
-## Endpoints - AGENDA (AGENDAMENTOS)
-Essas rotas controlam os agendamentos entre clientes e barbeiros.
+## Endpoints - AGENDA (AGENDAMENTOS) :
+Essas rotas controlam os agendamentos entre clientes e barbeiros ➝
 
 ```bash
 
-Método            Endpoint                  O que faz
-GET               /agenda                   Lista todos os agendamentos cadastrados
-GET               /agenda/:id               Busca um agendamento pelo ID
-POST              /agenda                   Cria um novo agendamento
-PUT               /agenda/:id               Atualiza os dados do agendamento
-DELETE            /agenda/:id               Exclui um agendamento pelo ID
+Método :          Endpoint :                O que faz :
+  GET               /agenda                   Lista todos os agendamentos cadastrados
+  GET               /agenda/:id               Busca um agendamento pelo ID
+  POST              /agenda                   Cria um novo agendamento
+  PUT               /agenda/:id               Atualiza os dados do agendamento
+  DELETE            /agenda/:id               Exclui um agendamento pelo ID
 
 ```
 
@@ -162,34 +162,33 @@ DELETE            /agenda/:id               Exclui um agendamento pelo ID
 
 ```
 
-## Testes no Postman
+## Testes no Postman :
 O Postman foi usado para testar todas as rotas da API.
- Para POST/PUT/PATCH, é necessário enviar os dados em Body > raw > JSON.
+Para POST/PUT/PATCH, é necessário enviar os dados em Body > raw > JSON.
 
-## Validações implementadas
+## Validações implementadas :
 O projeto possui validações simples para evitar erros comuns.
 
 ```bash
 
-Campo                  Regra
-Nome                   obrigatório e até 50 caracteres
-Email                  até 50 caracteres
-Telefone               até 11 caracteres
-CPF                    até 11 caracteres
+Campo :                 Regra :
+  Nome                   obrigatório e até 50 caracteres
+  Email                  até 50 caracteres
+  Telefone               até 11 caracteres
+  CPF                    até 11 caracteres
 
 ```
 
 
 ## Observações Importantes
-Para excluir clientes ou barbeiros, pode ser necessário excluir agendamentos antes.
+Para excluir clientes ou barbeiros, pode ser necessário excluir agendamentos antes;
 
 
-A API retorna mensagens em JSON e usa status HTTP corretos (200, 201, 404, 500).
+A API retorna mensagens em JSON e usa status HTTP corretos (200, 201, 404, 500);
 
 
 A estrutura do projeto está separada por rotas para facilitar a organização.
 
-👨‍💻 Autor
-Projeto desenvolvido por: Deryck
-Disciplina: API RESTful com Node.js
+Autor ➝
+Projeto desenvolvido por: Deryck, Luan e Lucas
 
