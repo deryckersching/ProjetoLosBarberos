@@ -1,4 +1,4 @@
-# API RESTful - Barbearia (Clientes, Barbeiros e Agenda)
+# API RESTful - Barbearia Los Barbeiros
   Este projeto é uma API RESTful feita em Node.js com Express e conectada ao banco MySQL.
   Ela permite cadastrar, listar, atualizar e excluir clientes, barbeiros e agendamentos.
 
