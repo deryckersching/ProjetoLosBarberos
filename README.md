@@ -77,11 +77,14 @@ GET /clientes/:id
 Retorna um cliente específico usando o nome.
 GET /clientes/nome/:nome
 
+---
 
 **POST - Criar cliente**
 
 Cria um novo cliente no banco com nome, email e telefone.
 POST /clientes
+
+---
 
 ```bash
 
@@ -94,11 +97,14 @@ Exemplo de JSON:
 
 ```
 
+---
+
 **PUT - Atualizar cliente completo**
 
 Atualiza todos os dados do cliente de uma vez.
 PUT /clientes/:id
 
+---
 
 **PATCH - Atualizar apenas um campo**
 
@@ -107,38 +113,47 @@ PATCH /clientes/updateNome/:id
 PATCH /clientes/updateEmail/:id
 PATCH /clientes/updateTelefone/:id
 
+---
 
 **DELETE - Excluir cliente**
 
 Remove um cliente do banco usando o ID.
 DELETE /clientes/:id
 
+---
 
 ## **Rotas de Barbeiros**
 Essas rotas controlam o cadastro e gerenciamento dos barbeiros.
+
+---
 
 **GET - Listar barbeiros**
 
 Mostra todos os barbeiros cadastrados.
 GET /barbeiros
 
+---
 
 ** GET - Buscar barbeiro por ID**
 
 Busca um barbeiro específico pelo ID.
 GET /barbeiros/:id
 
+---
 
 ** GET - Buscar barbeiro por Nome**
 
 Busca um barbeiro específico pelo nome.
 GET /barbeiros/nome/:nome
 
+---
 
 ** POST - Criar barbeiro**
 
 Cadastra um barbeiro novo com CPF, nome, email e telefone.
 POST /barbeiros
+
+---
 
 ```bash
 
@@ -152,11 +167,14 @@ Exemplo de JSON:
 
 ```
 
+---
+
 **PUT - Atualizar barbeiro completo**
 
 Atualiza todos os dados do barbeiro de uma vez.
 PUT /barbeiros/:id
 
+---
 
 **PATCH - Atualizar Email ou Telefone**
 
@@ -164,6 +182,7 @@ Atualiza somente um campo específico do barbeiro.
 PATCH /barbeiros/updateEmail/:id
 PATCH /barbeiros/updateTelefone/:id
 
+---
 
 **DELETE - Excluir barbeiro**
 
@@ -171,25 +190,32 @@ Remove um barbeiro do banco usando o ID ou nome.
 DELETE /barbeiros/:id
 DELETE /barbeiros/nome/:nome
 
+---
 
 ## **Rotas de Agenda (Agendamentos)**
 Essas rotas controlam os agendamentos entre clientes e barbeiros.
+
+---
 
 **GET - Listar agendamentos**
 
 Mostra todos os agendamentos cadastrados.
 GET /agenda
 
+---
 
 **GET - Buscar agendamento por ID**
 
 Busca um agendamento específico usando o ID.
 GET /agenda/:id
 
+---
 
 **POST - Criar agendamento**
 Cria um agendamento com data, hora, serviço, status, cliente e barbeiro.
 POST /agenda
+
+---
 
 ```bash
 
@@ -205,24 +231,28 @@ Exemplo de JSON:
 
 ```
 
+---
+
 **PUT - Atualizar agendamento**
 
 Atualiza os dados de um agendamento existente.
 PUT /agenda/:id
 
+---
 
 **DELETE - Excluir agendamento**
 
 Remove um agendamento do banco usando o ID.
 DELETE /agenda/:id
 
+---
 
 ## Testes no Postman :
 O Postman foi usado para testar todas as rotas (GET, POST, PUT, PATCH e DELETE).
 Basta colocar a rota, escolher o método e enviar o JSON no Body.
 
 
-
+---
 
 
 ## Observações Importantes
@@ -233,6 +263,8 @@ A API retorna mensagens em JSON e usa status HTTP corretos (200, 201, 404, 500);
 
 
 A estrutura do projeto está separada por rotas para facilitar a organização.
+
+***
 
 #### Autor ➝
 Projeto desenvolvido por: Deryck, Luan e Lucas
