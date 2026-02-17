@@ -152,7 +152,9 @@ Exemplo de JSON:
 - Atualiza somente um dado específico do cliente.
 
   PATCH /clientes/updateNome/:id
+  
   PATCH /clientes/updateEmail/:id
+  
   PATCH /clientes/updateTelefone/:id
 
 ---
