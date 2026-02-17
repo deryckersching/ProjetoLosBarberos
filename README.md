@@ -22,7 +22,9 @@ Postman ➝ usado para testar as requisições da API.
 O projeto foi separado em pastas para facilitar a manutenção e leitura do código.
 
 /config ➝ configuração do banco de dados
+
 /routes ➝ rotas da API (clientes, barbeiros, agenda)
+
 server.js ➝ arquivo principal que inicia o servidor
 
 
