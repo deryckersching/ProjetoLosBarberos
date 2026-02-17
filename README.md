@@ -2,9 +2,13 @@
    Este projeto é uma API RESTful feita em Node.js com Express e conectada ao banco MySQL.
    Ela permite cadastrar, listar, atualizar e excluir clientes, barbeiros e agendamentos.
 
+• • •
+
 ## Objetivo do Projeto :
  O objetivo é praticar o desenvolvimento de uma API REST usando Node.js e Express.
  O projeto também treina CRUD, rotas, conexão com banco e testes no Postman.
+
+ • • •
 
 ## Tecnologias Usadas :
 
