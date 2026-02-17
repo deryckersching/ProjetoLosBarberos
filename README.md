@@ -19,7 +19,7 @@
 
 
 ## Organização do Projeto :
-O projeto foi separado em pastas para facilitar a manutenção e leitura do código.
+- O projeto foi separado em pastas para facilitar a manutenção e leitura do código.
 
 ```bash
 
