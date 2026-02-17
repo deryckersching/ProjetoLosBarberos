@@ -237,17 +237,17 @@ Exemplo de JSON:
 - Atualiza somente um campo específico do barbeiro.
   
 
-  PATCH /barbeiros/updateNome/:id
+- PATCH /barbeiros/updateNome/:id
   
   
   
   
-  PATCH /barbeiros/updateEmail/:id
+- PATCH /barbeiros/updateEmail/:id
 
 
 
 
-  PATCH /barbeiros/updateTelefone/:id
+- PATCH /barbeiros/updateTelefone/:id
 
 ---
 
@@ -255,8 +255,15 @@ Exemplo de JSON:
 
 - Remove um barbeiro do banco usando o ID ou nome.
 
-  DELETE /barbeiros/:id
-  DELETE /barbeiros/nome/:nome
+
+
+- DELETE /barbeiros/:id
+
+  
+
+
+
+- DELETE /barbeiros/nome/:nome
 
 ---
 
