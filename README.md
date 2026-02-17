@@ -61,11 +61,12 @@ http://localhost:3001
 
 - O projeto utiliza as seguintes tabelas no MySQL ➝
 
-```bash
+
 Tabela:                         O que armazena:
-- cliente                        - Dados dos clientes
-- barbeiros                      - Dados dos barbeiros
-- agenda                         - Agendamentos feitos
+• cliente                        • Dados dos clientes
+• barbeiros                      • Dados dos barbeiros
+• agenda                         • Agendamentos feitos
+
 
 ---
 
