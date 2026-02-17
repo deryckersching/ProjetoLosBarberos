@@ -25,19 +25,19 @@
 
 Pasta/Arquivo :                    Para que serve :
 
-• /config ➝                        •configuração do banco de dados
+• /config ➝                           •configuração do banco de dados
 
-• /routes ➝                        •rotas da API (clientes, barbeiros, agenda)
+• /routes ➝                           •rotas da API (clientes, barbeiros, agenda)
 
-• server.js ➝                      •arquivo principal que inicia o servidor
+• server.js ➝                         •arquivo principal que inicia o servidor
 
-• /config/db.js ➝                  •Faz a conexão com o banco MySQL
+• /config/db.js ➝                     •Faz a conexão com o banco MySQL
 
-• /routes/clientes.js ➝            •Rotas e CRUD dos clientes
+• /routes/clientes.js ➝               •Rotas e CRUD dos clientes
 
-• /routes/barbeiros.js ➝           •Rotas e CRUD dos barbeiros
+• /routes/barbeiros.js ➝              •Rotas e CRUD dos barbeiros
 
-• /routes/agenda.js ➝              •Rotas e CRUD dos agendamentos
+• /routes/agenda.js ➝                 •Rotas e CRUD dos agendamentos
 
 ```
 ---
