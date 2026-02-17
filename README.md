@@ -21,12 +21,26 @@
 ## Organização do Projeto :
 O projeto foi separado em pastas para facilitar a manutenção e leitura do código.
 
+```bash
+
+Pasta/Arquivo :                   Para que serve :
+
 - /config ➝ configuração do banco de dados
 
 - /routes ➝ rotas da API (clientes, barbeiros, agenda)
 
 - server.js ➝ arquivo principal que inicia o servidor
 
+- /config/db.js                     Faz a conexão com o banco MySQL
+
+- /routes/clientes.js               Rotas e CRUD dos clientes
+
+- /routes/barbeiros.js              Rotas e CRUD dos barbeiros
+
+- /routes/agenda.js                 Rotas e CRUD dos agendamentos
+
+```
+---
 
 ## Como Rodar o Projeto :
 
