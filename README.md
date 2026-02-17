@@ -9,23 +9,23 @@
 
 ## Tecnologias Usadas :
 
-Node.js ➝ usado para rodar o backend.
+- Node.js ➝ usado para rodar o backend.
 
-Express ➝ usado para criar as rotas e endpoints.
+- Express ➝ usado para criar as rotas e endpoints.
 
-MySQL ➝ usado para armazenar os dados.
+- MySQL ➝ usado para armazenar os dados.
 
-Postman ➝ usado para testar as requisições da API.
+- Postman ➝ usado para testar as requisições da API.
 
 
 ## Organização do Projeto :
 O projeto foi separado em pastas para facilitar a manutenção e leitura do código.
 
-/config ➝ configuração do banco de dados
+- /config ➝ configuração do banco de dados
 
-/routes ➝ rotas da API (clientes, barbeiros, agenda)
+- /routes ➝ rotas da API (clientes, barbeiros, agenda)
 
-server.js ➝ arquivo principal que inicia o servidor
+- server.js ➝ arquivo principal que inicia o servidor
 
 
 ## Como Rodar o Projeto :
@@ -62,7 +62,7 @@ Essas rotas controlam o cadastro e gerenciamento dos clientes.
 
 **GET - Listar todos os clientes**
 
-Retorna todos os clientes cadastrados no banco.
+- Retorna todos os clientes cadastrados no banco.
 
 GET /clientes
 
@@ -70,7 +70,7 @@ GET /clientes
 
 **GET - Buscar cliente por ID**
 
-Retorna um cliente específico usando o ID.
+- Retorna um cliente específico usando o ID.
 
 GET /clientes/:id
 
@@ -78,7 +78,7 @@ GET /clientes/:id
 
 **GET - Buscar cliente por Nome**
 
-Retorna um cliente específico usando o nome.
+- Retorna um cliente específico usando o nome.
 
 GET /clientes/nome/:nome
 
@@ -86,7 +86,7 @@ GET /clientes/nome/:nome
 
 **POST - Criar cliente**
 
-Cria um novo cliente no banco com nome, email e telefone.
+- Cria um novo cliente no banco com nome, email e telefone.
 
 POST /clientes
 
@@ -96,9 +96,9 @@ POST /clientes
 
 Exemplo de JSON:
 {
-  "Nome": "João Silva",
-  "Email": "joao@email.com",
-  "Telefone": "11999999999"
+  "Nome": "Fernando Silva",
+  "Email": "fernando@email.com",
+  "Telefone": "22777777777"
 }
 
 ```
@@ -107,7 +107,7 @@ Exemplo de JSON:
 
 **PUT - Atualizar cliente completo**
 
-Atualiza todos os dados do cliente de uma vez.
+- Atualiza todos os dados do cliente de uma vez.
 
 PUT /clientes/:id
 
@@ -115,7 +115,7 @@ PUT /clientes/:id
 
 **PATCH - Atualizar apenas um campo**
 
-Atualiza somente um dado específico do cliente.
+- Atualiza somente um dado específico do cliente.
 
 PATCH /clientes/updateNome/:id
 PATCH /clientes/updateEmail/:id
@@ -125,7 +125,7 @@ PATCH /clientes/updateTelefone/:id
 
 **DELETE - Excluir cliente**
 
-Remove um cliente do banco usando o ID.
+- Remove um cliente do banco usando o ID.
 
 DELETE /clientes/:id
 
@@ -138,31 +138,31 @@ Essas rotas controlam o cadastro e gerenciamento dos barbeiros.
 
 **GET - Listar barbeiros**
 
-Mostra todos os barbeiros cadastrados.
+- Mostra todos os barbeiros cadastrados.
 
 GET /barbeiros
 
 ---
 
-** GET - Buscar barbeiro por ID**
+**GET - Buscar barbeiro por Nome**
 
-Busca um barbeiro específico pelo ID.
-
-GET /barbeiros/:id
-
----
-
-** GET - Buscar barbeiro por Nome**
-
-Busca um barbeiro específico pelo nome.
+- Busca um barbeiro específico pelo nome.
 
 GET /barbeiros/nome/:nome
 
 ---
 
-** POST - Criar barbeiro**
+**GET - Buscar barbeiro por ID**
 
-Cadastra um barbeiro novo com CPF, nome, email e telefone.
+- Busca um barbeiro específico pelo ID.
+
+GET /barbeiros/:id
+
+---
+
+**POST - Criar barbeiro**
+
+- Cadastra um barbeiro novo com CPF, nome, email e telefone.
 
 POST /barbeiros
 
@@ -172,9 +172,9 @@ POST /barbeiros
 
 Exemplo de JSON:
 {
-  "CPF": "12345678901",
-  "Nome": "Carlos Barbeiro",
-  "Email": "carlos@barbearia.com",
+  "CPF": "01123456789",
+  "Nome": "Lucas Barbeiro",
+  "Email": "lucas@barbearia.com",
   "Telefone": "11999990000"
 }
 
@@ -184,7 +184,7 @@ Exemplo de JSON:
 
 **PUT - Atualizar barbeiro completo**
 
-Atualiza todos os dados do barbeiro de uma vez.
+- Atualiza todos os dados do barbeiro de uma vez.
 
 PUT /barbeiros/:id
 
@@ -192,7 +192,8 @@ PUT /barbeiros/:id
 
 **PATCH - Atualizar Email ou Telefone**
 
-Atualiza somente um campo específico do barbeiro.
+- Atualiza somente um campo específico do barbeiro.
+  
 PATCH /barbeiros/updateEmail/:id
 PATCH /barbeiros/updateTelefone/:id
 
@@ -200,7 +201,8 @@ PATCH /barbeiros/updateTelefone/:id
 
 **DELETE - Excluir barbeiro**
 
-Remove um barbeiro do banco usando o ID ou nome.
+- Remove um barbeiro do banco usando o ID ou nome.
+
 DELETE /barbeiros/:id
 DELETE /barbeiros/nome/:nome
 
@@ -213,7 +215,7 @@ Essas rotas controlam os agendamentos entre clientes e barbeiros.
 
 **GET - Listar agendamentos**
 
-Mostra todos os agendamentos cadastrados.
+- Mostra todos os agendamentos cadastrados.
 
 GET /agenda
 
@@ -221,7 +223,7 @@ GET /agenda
 
 **GET - Buscar agendamento por ID**
 
-Busca um agendamento específico usando o ID.
+- Busca um agendamento específico usando o ID.
 
 GET /agenda/:id
 
@@ -229,7 +231,7 @@ GET /agenda/:id
 
 **POST - Criar agendamento**
 
-Cria um agendamento com data, hora, serviço, status, cliente e barbeiro.
+- Cria um agendamento com data, hora, serviço, status, cliente e barbeiro.
 
 POST /agenda
 
@@ -239,12 +241,12 @@ POST /agenda
 
 Exemplo de JSON:
 {
-  "Data_agendamento": "2026-02-15",
-  "Hora": "14:30:00",
+  "Data_agendamento": "2026-02-17",
+  "Hora": "10:32:00",
   "Servico": "Corte + Barba",
   "Status_agendamento": "ativo",
   "id_cliente": 1,
-  "CPF_barbeiro": "12345678901"
+  "CPF_barbeiro": "01123456789"
 }
 
 ```
@@ -253,7 +255,7 @@ Exemplo de JSON:
 
 **PUT - Atualizar agendamento**
 
-Atualiza os dados de um agendamento existente.
+- Atualiza os dados de um agendamento existente.
 
 PUT /agenda/:id
 
@@ -261,14 +263,14 @@ PUT /agenda/:id
 
 **DELETE - Excluir agendamento**
 
-Remove um agendamento do banco usando o ID.
+- Remove um agendamento do banco usando o ID.
 
 DELETE /agenda/:id
 
 ---
 
 ## Testes no Postman :
-O Postman foi usado para testar todas as rotas (GET, POST, PUT, PATCH e DELETE).
+- O Postman foi usado para testar todas as rotas (GET, POST, PUT, PATCH e DELETE).
 Basta colocar a rota, escolher o método e enviar o JSON no Body.
 
 
@@ -276,16 +278,16 @@ Basta colocar a rota, escolher o método e enviar o JSON no Body.
 
 
 ## Observações Importantes
-Para excluir clientes ou barbeiros, pode ser necessário excluir agendamentos antes;
+- Para excluir clientes ou barbeiros, pode ser necessário excluir agendamentos antes;
 
 
-A API retorna mensagens em JSON e usa status HTTP corretos (200, 201, 404, 500);
+- A API retorna mensagens em JSON e usa status HTTP corretos (200, 201, 404, 500);
 
 
-A estrutura do projeto está separada por rotas para facilitar a organização.
+- A estrutura do projeto está separada por rotas para facilitar a organização.
 
 ***
 
-### Autor ➝
-Projeto desenvolvido por: Deryck, Luan e Lucas
+#### Autor ➝
+- Projeto desenvolvido por: Deryck, Luan e Lucas
 
