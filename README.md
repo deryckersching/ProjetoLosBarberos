@@ -65,8 +65,7 @@ http://localhost:3001
 
 ```bash
 
-Tabela:                         O que armazena:
-
+Tabela :                         O que armazena :
 
 • cliente                          • Dados dos clientes
 
