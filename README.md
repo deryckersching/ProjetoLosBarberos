@@ -154,7 +154,9 @@ Exemplo de JSON:
   PATCH /clientes/updateNome/:id
   
   
+  
   PATCH /clientes/updateEmail/:id
+  
   
   
   PATCH /clientes/updateTelefone/:id
