@@ -2,31 +2,21 @@
    Este projeto é uma API RESTful feita em Node.js com Express e conectada ao banco MySQL.
    Ela permite cadastrar, listar, atualizar e excluir clientes, barbeiros e agendamentos.
 
->
-
 ## Objetivo do Projeto :
  O objetivo é praticar o desenvolvimento de uma API REST usando Node.js e Express.
  O projeto também treina CRUD, rotas, conexão com banco e testes no Postman.
 
- >
 
 ## Tecnologias Usadas :
 
 Node.js ➝ usado para rodar o backend.
 
->
-
 Express ➝ usado para criar as rotas e endpoints.
-
->
 
 MySQL ➝ usado para armazenar os dados.
 
->
-
 Postman ➝ usado para testar as requisições da API.
 
->
 
 ## Organização do Projeto :
 O projeto foi separado em pastas para facilitar a manutenção e leitura do código.
@@ -73,6 +63,7 @@ Essas rotas controlam o cadastro e gerenciamento dos clientes.
 **GET - Listar todos os clientes**
 
 Retorna todos os clientes cadastrados no banco.
+
 GET /clientes
 
 ---
@@ -80,6 +71,7 @@ GET /clientes
 **GET - Buscar cliente por ID**
 
 Retorna um cliente específico usando o ID.
+
 GET /clientes/:id
 
 ---
@@ -87,6 +79,7 @@ GET /clientes/:id
 **GET - Buscar cliente por Nome**
 
 Retorna um cliente específico usando o nome.
+
 GET /clientes/nome/:nome
 
 ---
@@ -94,6 +87,7 @@ GET /clientes/nome/:nome
 **POST - Criar cliente**
 
 Cria um novo cliente no banco com nome, email e telefone.
+
 POST /clientes
 
 ---
@@ -114,6 +108,7 @@ Exemplo de JSON:
 **PUT - Atualizar cliente completo**
 
 Atualiza todos os dados do cliente de uma vez.
+
 PUT /clientes/:id
 
 ---
@@ -130,6 +125,7 @@ PATCH /clientes/updateTelefone/:id
 **DELETE - Excluir cliente**
 
 Remove um cliente do banco usando o ID.
+
 DELETE /clientes/:id
 
 ---
@@ -142,6 +138,7 @@ Essas rotas controlam o cadastro e gerenciamento dos barbeiros.
 **GET - Listar barbeiros**
 
 Mostra todos os barbeiros cadastrados.
+
 GET /barbeiros
 
 ---
@@ -149,6 +146,7 @@ GET /barbeiros
 ** GET - Buscar barbeiro por ID**
 
 Busca um barbeiro específico pelo ID.
+
 GET /barbeiros/:id
 
 ---
@@ -156,6 +154,7 @@ GET /barbeiros/:id
 ** GET - Buscar barbeiro por Nome**
 
 Busca um barbeiro específico pelo nome.
+
 GET /barbeiros/nome/:nome
 
 ---
@@ -163,6 +162,7 @@ GET /barbeiros/nome/:nome
 ** POST - Criar barbeiro**
 
 Cadastra um barbeiro novo com CPF, nome, email e telefone.
+
 POST /barbeiros
 
 ---
@@ -184,6 +184,7 @@ Exemplo de JSON:
 **PUT - Atualizar barbeiro completo**
 
 Atualiza todos os dados do barbeiro de uma vez.
+
 PUT /barbeiros/:id
 
 ---
@@ -212,6 +213,7 @@ Essas rotas controlam os agendamentos entre clientes e barbeiros.
 **GET - Listar agendamentos**
 
 Mostra todos os agendamentos cadastrados.
+
 GET /agenda
 
 ---
@@ -219,12 +221,15 @@ GET /agenda
 **GET - Buscar agendamento por ID**
 
 Busca um agendamento específico usando o ID.
+
 GET /agenda/:id
 
 ---
 
 **POST - Criar agendamento**
+
 Cria um agendamento com data, hora, serviço, status, cliente e barbeiro.
+
 POST /agenda
 
 ---
@@ -248,6 +253,7 @@ Exemplo de JSON:
 **PUT - Atualizar agendamento**
 
 Atualiza os dados de um agendamento existente.
+
 PUT /agenda/:id
 
 ---
@@ -255,6 +261,7 @@ PUT /agenda/:id
 **DELETE - Excluir agendamento**
 
 Remove um agendamento do banco usando o ID.
+
 DELETE /agenda/:id
 
 ---
@@ -278,6 +285,6 @@ A estrutura do projeto está separada por rotas para facilitar a organização.
 
 ***
 
-#### Autor ➝
+### Autor ➝
 Projeto desenvolvido por: Deryck, Luan e Lucas
 
