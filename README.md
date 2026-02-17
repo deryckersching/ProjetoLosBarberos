@@ -37,8 +37,7 @@ npm install
 
 ```
 
-
-3) Rodar o servidor ➝
+2) Rodar o servidor ➝
 Esse comando liga a API para poder testar no Postman.
 
 ```bash
@@ -64,12 +63,14 @@ Essas rotas controlam o cadastro e gerenciamento dos clientes.
 Retorna todos os clientes cadastrados no banco.
 GET /clientes
 
+---
 
 **GET - Buscar cliente por ID**
 
 Retorna um cliente específico usando o ID.
 GET /clientes/:id
 
+---
 
 **GET - Buscar cliente por Nome**
 
