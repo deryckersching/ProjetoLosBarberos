@@ -64,7 +64,9 @@ http://localhost:3001
 - O projeto utiliza as seguintes tabelas no MySQL ➝
 
 
-Tabela:                         O que armazena:
+Tabela:                       O que armazena:
+
+
 • cliente                        • Dados dos clientes
 • barbeiros                      • Dados dos barbeiros
 • agenda                         • Agendamentos feitos
