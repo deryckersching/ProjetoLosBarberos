@@ -4,6 +4,18 @@
 
    ###### **•Importante : Antes de iniciar, configure seu banco MySQL e o arquivo .env**
 
+```bash
+
+   .env
+   
+   •DB_HOST=localhost
+   •DB_PORT=3306
+   •DB_USER=root
+   •DB_PASS=root
+   •DB_NAME=LosBarbeiros
+
+```
+
 ## Objetivo do Projeto :
  O objetivo é praticar o desenvolvimento de uma API REST usando Node.js e Express.
  O projeto também treina CRUD, rotas, conexão com banco e testes no Postman.
@@ -337,5 +349,5 @@ Basta colocar a rota, escolher o método e enviar o JSON no Body.
 ---
 
 #### Projeto Feito ➝
-- Projeto desenvolvido por: Deryck, Luan e Lucas
+- Projeto desenvolvido por : Deryck, Luan e Lucas
 
