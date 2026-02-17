@@ -149,7 +149,8 @@ Exemplo de JSON:
 
 **PATCH - Atualizar apenas um campo**
 
-- Atualiza somente um dado específico do cliente.
+**- Atualiza somente um dado específico do cliente.**
+
   
 
 - PATCH /clientes/updateNome/:id
