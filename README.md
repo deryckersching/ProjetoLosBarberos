@@ -81,7 +81,7 @@ http://localhost:3001
 
 Tabela :                         O que armazena :
 
-• cliente                          • Dados dos clientes
+• clientes                         • Dados dos clientes
 
 • barbeiros                        • Dados dos barbeiros
 
