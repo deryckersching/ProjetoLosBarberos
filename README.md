@@ -58,13 +58,14 @@ http://localhost:3001
 ```
 
 ## **Tabelas do Banco de Dados :**
-O projeto utiliza as seguintes tabelas no MySQL ➝
 
+- O projeto utiliza as seguintes tabelas no MySQL ➝
 
-Tabela :                                                        O que armazena :
-   cliente                                                          Dados dos clientes
-   barbeiros                                                        Dados dos barbeiros
-   agenda                                                           Agendamentos feitos
+```bash
+Tabela:                         O que armazena:
+- cliente                        - Dados dos clientes
+- barbeiros                      - Dados dos barbeiros
+- agenda                         - Agendamentos feitos
 
 ---
 
