@@ -57,6 +57,8 @@ http://localhost:3001
 
 ```
 
+---
+
 ## **Tabelas do Banco de Dados :**
 
 - O projeto utiliza as seguintes tabelas no MySQL ➝
