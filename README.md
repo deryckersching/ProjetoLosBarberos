@@ -334,20 +334,7 @@ Exemplo de JSON:
 - O Postman foi usado para testar todas as rotas (GET, POST, PUT, PATCH e DELETE).
 Basta colocar a rota, escolher o método e enviar o JSON no Body.
 
-
 ---
-
-
-## Observações Importantes
-- Para excluir clientes ou barbeiros, pode ser necessário excluir agendamentos antes;
-
-
-- A API retorna mensagens em JSON e usa status HTTP corretos (200, 201, 404, 500);
-
-
-- A estrutura do projeto está separada por rotas para facilitar a organização.
-
-***
 
 #### Projeto Feito ➝
 - Projeto desenvolvido por: Deryck, Luan e Lucas
