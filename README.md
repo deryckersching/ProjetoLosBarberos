@@ -68,7 +68,9 @@ Tabela:                       O que armazena:
 
 
 • cliente                        • Dados dos clientes
+
 • barbeiros                      • Dados dos barbeiros
+
 • agenda                         • Agendamentos feitos
 
 
