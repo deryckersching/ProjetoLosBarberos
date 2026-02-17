@@ -98,7 +98,7 @@ Essas rotas controlam o cadastro e gerenciamento dos clientes.
 
 - Retorna todos os clientes cadastrados no banco.
 
-GET /clientes
+  GET /clientes
 
 ---
 
@@ -106,7 +106,7 @@ GET /clientes
 
 - Retorna um cliente específico usando o ID.
 
-GET /clientes/:id
+  GET /clientes/:id
 
 ---
 
@@ -114,7 +114,7 @@ GET /clientes/:id
 
 - Retorna um cliente específico usando o nome.
 
-GET /clientes/nome/:nome
+  GET /clientes/nome/:nome
 
 ---
 
@@ -122,7 +122,7 @@ GET /clientes/nome/:nome
 
 - Cria um novo cliente no banco com nome, email e telefone.
 
-POST /clientes
+  POST /clientes
 
 ---
 
@@ -143,7 +143,7 @@ Exemplo de JSON:
 
 - Atualiza todos os dados do cliente de uma vez.
 
-PUT /clientes/:id
+  PUT /clientes/:id
 
 ---
 
@@ -151,9 +151,9 @@ PUT /clientes/:id
 
 - Atualiza somente um dado específico do cliente.
 
-PATCH /clientes/updateNome/:id
-PATCH /clientes/updateEmail/:id
-PATCH /clientes/updateTelefone/:id
+  PATCH /clientes/updateNome/:id
+  PATCH /clientes/updateEmail/:id
+  PATCH /clientes/updateTelefone/:id
 
 ---
 
@@ -161,7 +161,7 @@ PATCH /clientes/updateTelefone/:id
 
 - Remove um cliente do banco usando o ID.
 
-DELETE /clientes/:id
+  DELETE /clientes/:id
 
 ---
 
@@ -174,7 +174,7 @@ Essas rotas controlam o cadastro e gerenciamento dos barbeiros.
 
 - Mostra todos os barbeiros cadastrados.
 
-GET /barbeiros
+  GET /barbeiros
 
 ---
 
@@ -182,7 +182,7 @@ GET /barbeiros
 
 - Busca um barbeiro específico pelo nome.
 
-GET /barbeiros/nome/:nome
+  GET /barbeiros/nome/:nome
 
 ---
 
@@ -190,7 +190,7 @@ GET /barbeiros/nome/:nome
 
 - Busca um barbeiro específico pelo ID.
 
-GET /barbeiros/:id
+  GET /barbeiros/:id
 
 ---
 
@@ -198,7 +198,7 @@ GET /barbeiros/:id
 
 - Cadastra um barbeiro novo com CPF, nome, email e telefone.
 
-POST /barbeiros
+  POST /barbeiros
 
 ---
 
@@ -220,7 +220,7 @@ Exemplo de JSON:
 
 - Atualiza todos os dados do barbeiro de uma vez.
 
-PUT /barbeiros/:id
+  PUT /barbeiros/:id
 
 ---
 
@@ -228,8 +228,8 @@ PUT /barbeiros/:id
 
 - Atualiza somente um campo específico do barbeiro.
   
-PATCH /barbeiros/updateEmail/:id
-PATCH /barbeiros/updateTelefone/:id
+  PATCH /barbeiros/updateEmail/:id
+  PATCH /barbeiros/updateTelefone/:id
 
 ---
 
@@ -237,8 +237,8 @@ PATCH /barbeiros/updateTelefone/:id
 
 - Remove um barbeiro do banco usando o ID ou nome.
 
-DELETE /barbeiros/:id
-DELETE /barbeiros/nome/:nome
+  DELETE /barbeiros/:id
+  DELETE /barbeiros/nome/:nome
 
 ---
 
@@ -251,7 +251,7 @@ Essas rotas controlam os agendamentos entre clientes e barbeiros.
 
 - Mostra todos os agendamentos cadastrados.
 
-GET /agenda
+  GET /agenda
 
 ---
 
@@ -259,7 +259,7 @@ GET /agenda
 
 - Busca um agendamento específico usando o ID.
 
-GET /agenda/:id
+  GET /agenda/:id
 
 ---
 
@@ -267,7 +267,7 @@ GET /agenda/:id
 
 - Cria um agendamento com data, hora, serviço, status, cliente e barbeiro.
 
-POST /agenda
+  POST /agenda
 
 ---
 
@@ -291,7 +291,7 @@ Exemplo de JSON:
 
 - Atualiza os dados de um agendamento existente.
 
-PUT /agenda/:id
+  PUT /agenda/:id
 
 ---
 
@@ -299,7 +299,7 @@ PUT /agenda/:id
 
 - Remove um agendamento do banco usando o ID.
 
-DELETE /agenda/:id
+  DELETE /agenda/:id
 
 ---
 
@@ -322,6 +322,6 @@ Basta colocar a rota, escolher o método e enviar o JSON no Body.
 
 ***
 
-#### Autor ➝
+#### Projeto Feito ➝
 - Projeto desenvolvido por: Deryck, Luan e Lucas
 
