@@ -8,19 +8,25 @@
  O objetivo é praticar o desenvolvimento de uma API REST usando Node.js e Express.
  O projeto também treina CRUD, rotas, conexão com banco e testes no Postman.
 
- ...
+ >
 
 ## Tecnologias Usadas :
 
 Node.js ➝ usado para rodar o backend.
 
+>
+
 Express ➝ usado para criar as rotas e endpoints.
+
+>
 
 MySQL ➝ usado para armazenar os dados.
 
+>
+
 Postman ➝ usado para testar as requisições da API.
 
-
+>
 
 ## Organização do Projeto :
 O projeto foi separado em pastas para facilitar a manutenção e leitura do código.
