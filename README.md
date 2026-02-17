@@ -235,11 +235,16 @@ Exemplo de JSON:
 **PATCH - Atualizar Nome, Email ou Telefone**
 
 - Atualiza somente um campo específico do barbeiro.
+  
 
   PATCH /barbeiros/updateNome/:id
   
   
+  
+  
   PATCH /barbeiros/updateEmail/:id
+
+
 
 
   PATCH /barbeiros/updateTelefone/:id
