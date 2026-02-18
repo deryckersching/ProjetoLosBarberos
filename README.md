@@ -16,11 +16,11 @@
 
 ```
 
- ###### **•Importante : Sempre que fizer qualquer modificação nos arquivos do projeto, salve o arquivo (Ctrl + S) antes de testar novamente.
+ ###### **•Importante : Sempre que fizer qualquer modificação nos arquivos do projeto, salve o arquivo (Ctrl + S) antes de testar novamente.**
 
  ```bash
 
-   ctrl + s
+    ctrl + s
 
    ```
 
