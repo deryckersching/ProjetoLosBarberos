@@ -18,11 +18,11 @@
 
  ###### **•Importante : Sempre que fizer qualquer modificação nos arquivos do projeto, salve o arquivo (Ctrl + S) antes de testar novamente.**
 
- ```bash
+```bash
 
     ctrl + s
 
-   ```
+```
 
 ## Objetivo do Projeto :
  O objetivo é praticar o desenvolvimento de uma API REST usando Node.js e Express.
