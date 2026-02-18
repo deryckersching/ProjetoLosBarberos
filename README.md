@@ -317,7 +317,7 @@ Exemplo de JSON:
   "Data_agendamento": "2026-02-17",
   "Hora": "10:32:00",
   "Servico": "Corte + Barba",
-  "Status_agendamento": "ativo",
+  "Status_agendamento": "boolean",
   "id_cliente": 1,
   "CPF_barbeiro": "01123456789"
 }
