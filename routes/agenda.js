@@ -3,7 +3,7 @@ const { pool } = require("../config/db");
 
 const router = express.Router();
 
-// ✅ GET - listar todos os agendamentos
+// GET - listar todos os agendamentos
 router.get("/", async (req, res) => {
   try {
     const [rows] = await pool.execute("SELECT * FROM agenda");
@@ -14,7 +14,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-// ✅ GET - buscar agendamento por ID
+// GET - buscar agendamento por ID
 router.get("/:id", async (req, res) => {
   const agendaId = req.params.id;
 
@@ -35,7 +35,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-// ✅ POST - criar novo agendamento
+// POST - criar novo agendamento
 router.post("/", async (req, res) => {
   const { Data_agendamento, Hora, Servico, Status_agendamento, id_cliente, CPF_barbeiro } = req.body;
 
@@ -56,7 +56,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// ✅ PUT - atualizar agendamento por ID
+// PUT - atualizar agendamento por ID
 router.put("/:id", async (req, res) => {
   const agendaId = req.params.id;
   const { Data_agendamento, Hora, Servico, Status_agendamento, id_cliente, CPF_barbeiro } = req.body;
@@ -80,7 +80,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-// ✅ DELETE - excluir agendamento por ID (ARRUMADO E FUNCIONANDO)
+// DELETE - excluir agendamento por ID (ARRUMADO E FUNCIONANDO)
 router.delete("/:id", async (req, res) => {
   const agendaId = req.params.id;
 
